@@ -1,12 +1,14 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="['/']">almissal</a>
+      <a class="navbar-brand mx-4" [routerLink]="['/']">
+        <img src="assets/almisaal-logo.svg" alt="logo" height="150" width="250">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center" [ngClass]="{ show: isExpanded }">
+      <div class="navbar-collapse collapse d-lg-inline-flex justify-content-center" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-dark" [routerLink]="['/']">NEW IN</a>
