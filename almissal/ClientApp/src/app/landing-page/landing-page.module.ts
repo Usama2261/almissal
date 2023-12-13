@@ -6,6 +6,9 @@ import { ImageCrouselComponent } from './image-crousel/image-crousel.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { LandingPageComponent } from './landing-page.component';
 import { FeaturedBrandsComponent } from './featured-brands/featured-brands.component';
+import { NewInComponent } from './new-in/new-in.component';
+import { ClientServicesComponent } from './client-services/client-services.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -13,7 +16,10 @@ import { FeaturedBrandsComponent } from './featured-brands/featured-brands.compo
     LandingPageComponent,
     NavMenuComponent,
     ImageCrouselComponent,
-    FeaturedBrandsComponent
+    FeaturedBrandsComponent,
+    NewInComponent,
+    ClientServicesComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

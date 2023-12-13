@@ -1,0 +1,41 @@
+.image-block{
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 90%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    color: white; /* Text color */
+    font-weight: bolder;
+}
+
+.image {
+    width: 100%; /* Make the image fill the available width */
+    display: block;
+}
+
+.text#winterCollection{
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.text#summerCollection{
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.text#cambricCollection{
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.text#embroideredCollection{
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.text#manCollection{
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
