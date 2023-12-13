@@ -1,48 +1,53 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
+  <div class="row bg-dark">
+    <p class="text-center text-white my-2">"Al-Misaal Collection" The fastest growing fashion platform in Pakistan</p>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow">
     <div class="container-fluid">
+      <!-- Logo -->
       <a class="navbar-brand mx-4" [routerLink]="['/']">
-        <img src="assets/almisaal-logo.svg" alt="logo" height="150" width="250">
+        <img src="assets/almisaal-logo.svg" alt="logo" height="100" width="200">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navigation Menu -->
       <div class="navbar-collapse collapse d-lg-inline-flex justify-content-center" [ngClass]="{ show: isExpanded }">
-        <ul class="navbar-nav flex-grow">
+        <ul class="navbar-nav flex-grow mx-4">
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link text-dark" [routerLink]="['/']">NEW IN</a>
+            <a class="nav-link text-muted" [routerLink]="['/']">NEW IN</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']">BRANDS</a>
+            <a class="nav-link text-muted" [routerLink]="['/counter']">BRANDS</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">SUMMER</a>
+            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SUMMER</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">WINTERS</a>
+            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">WINTERS</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">SHAWALS</a>
+            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SHAWALS</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">MAN</a>
+            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">MAN</a>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">SALE</a>
+            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SALE</a>
           </li>
         </ul>
       </div>
       <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-4">
           <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"><i class="bi bi-search"></i></a>
+            <a class="nav-link text-muted" [routerLink]="['/counter']"><i class="bi bi-search"></i></a>
           </li>
           <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"><i class="bi bi-truck"></i></a>
+            <a class="nav-link text-muted" [routerLink]="['/counter']"><i class="bi bi-truck"></i></a>
           </li>
           <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"><i class="bi bi-bag"></i></a>
+            <a class="nav-link text-muted" [routerLink]="['/counter']"><i class="bi bi-bag"></i></a>
           </li>
         </ul>
       </div>
