@@ -20,3 +20,7 @@
 .nav-link{
   font-size: 120%;
 }
+
+.navbar-nav .nav-item:hover > .dropdown-menu {
+  display: block;
+}

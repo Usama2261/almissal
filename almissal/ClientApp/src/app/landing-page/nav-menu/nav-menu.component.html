@@ -18,23 +18,81 @@
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-muted" [routerLink]="['/']">NEW IN</a>
           </li>
-          <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/counter']">BRANDS</a>
+          <li class="nav-item mx-4">
+            <!-- <a class="nav-link text-muted" [routerLink]="['/counter']">BRANDS</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              BRANDS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Saya</a></li>
+              <li><a class="dropdown-item" href="#">Limelight</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sana Safinaz</a></li>
+              <li><a class="dropdown-item" href="#">Breeze</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Beechtree</a></li>
+              <li><a class="dropdown-item" href="#">Alkaram Studio</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sapphire</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SUMMER</a>
+            <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SUMMER</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              SUMMER
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lawn</a></li>
+              <li><a class="dropdown-item" href="#">Organza</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Jacquard</a></li>
+              <li><a class="dropdown-item" href="#">Paper Cotton</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">WINTERS</a>
+            <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">WINTERS</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              WINTERS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Khaddar</a></li>
+              <li><a class="dropdown-item" href="#">Cotton</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Jacquard</a></li>
+              <li><a class="dropdown-item" href="#">Velvet</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SHAWALS</a>
+            <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SHAWALS</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              SHAWALS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Winter</a></li>
+              <li><a class="dropdown-item" href="#">Summer</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">MAN</a>
+            <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">MAN</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              MAN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Winter</a></li>
+              <li><a class="dropdown-item" href="#">Summer</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SALE</a>
+            <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SALE</a> -->
+            <a class="nav-link" role="button" aria-expanded="false">
+              SALE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Flat 10% OFF</a></li>
+              <li><a class="dropdown-item" href="#">Flat 12% OFF</a></li>
+              <li><a class="dropdown-item" href="#">Flat 15% OFF</a></li>
+              <li><a class="dropdown-item" href="#">Flat 20% OFF</a></li>
+            </ul>
           </li>
         </ul>
       </div>
