@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./image-crousel.component.css']
 })
 export class ImageCrouselComponent {
-
+  
 }

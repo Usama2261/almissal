@@ -9,6 +9,7 @@ import { FeaturedBrandsComponent } from './featured-brands/featured-brands.compo
 import { NewInComponent } from './new-in/new-in.component';
 import { ClientServicesComponent } from './client-services/client-services.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    NgbCarouselModule
   ]
 })
 export class LandingPageModule { }

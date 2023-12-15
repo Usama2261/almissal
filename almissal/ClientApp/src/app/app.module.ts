@@ -22,7 +22,8 @@ import { LandingPageModule } from './landing-page/landing-page.module';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    LandingPageModule
+    LandingPageModule,
+    // NgbCarouselModule
   ],
   exports: [AppRoutingModule],
   providers: [],
