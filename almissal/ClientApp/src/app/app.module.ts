@@ -9,13 +9,18 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
+import { BrandSayaComponent } from './home/brand-saya/brand-saya.component';
+import { NavMenuComponent } from './landing-page/nav-menu/nav-menu.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    BrandSayaComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -23,6 +28,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
     FormsModule,
     AppRoutingModule,
     LandingPageModule,
+    SharedModule
     // NgbCarouselModule
   ],
   exports: [AppRoutingModule],

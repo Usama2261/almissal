@@ -15,16 +15,18 @@
       <!-- Navigation Menu -->
       <div class="navbar-collapse collapse d-lg-inline-flex justify-content-center" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow mx-4">
+          <!-- New In -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-muted" [routerLink]="['/']">NEW IN</a>
           </li>
+          <!-- Brands -->
           <li class="nav-item mx-4">
             <!-- <a class="nav-link text-muted" [routerLink]="['/counter']">BRANDS</a> -->
             <a class="nav-link" role="button" aria-expanded="false">
               BRANDS
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Saya</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home/brand-saya']">Saya</a></li>
               <li><a class="dropdown-item" href="#">Limelight</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Sana Safinaz</a></li>
@@ -36,6 +38,7 @@
               <li><a class="dropdown-item" href="#">Sapphire</a></li>
             </ul>
           </li>
+          <!-- Summer -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
             <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SUMMER</a> -->
             <a class="nav-link" role="button" aria-expanded="false">
@@ -49,6 +52,7 @@
               <li><a class="dropdown-item" href="#">Paper Cotton</a></li>
             </ul>
           </li>
+          <!-- Winters -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
             <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">WINTERS</a> -->
             <a class="nav-link" role="button" aria-expanded="false">
@@ -62,6 +66,7 @@
               <li><a class="dropdown-item" href="#">Velvet</a></li>
             </ul>
           </li>
+          <!-- Shawals -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
             <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SHAWALS</a> -->
             <a class="nav-link" role="button" aria-expanded="false">
@@ -72,6 +77,7 @@
               <li><a class="dropdown-item" href="#">Summer</a></li>
             </ul>
           </li>
+          <!-- MAN -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
             <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">MAN</a> -->
             <a class="nav-link" role="button" aria-expanded="false">
@@ -82,9 +88,10 @@
               <li><a class="dropdown-item" href="#">Summer</a></li>
             </ul>
           </li>
+          <!-- SALE -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']">
             <!-- <a class="nav-link text-muted" [routerLink]="['/fetch-data']">SALE</a> -->
-            <a class="nav-link" role="button" aria-expanded="false">
+            <a class="nav-link text-danger" role="button" aria-expanded="false">
               SALE
             </a>
             <ul class="dropdown-menu">
