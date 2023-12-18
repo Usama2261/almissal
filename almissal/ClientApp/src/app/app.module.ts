@@ -5,22 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { BrandSayaComponent } from './home/brand-saya/brand-saya.component';
 import { NavMenuComponent } from './landing-page/nav-menu/nav-menu.component';
 import { SharedModule } from './shared/shared.module';
+import { FooterComponent } from './landing-page/footer/footer.component';
+import { ClientServicesComponent } from './landing-page/client-services/client-services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     BrandSayaComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    FooterComponent,
+    ClientServicesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
