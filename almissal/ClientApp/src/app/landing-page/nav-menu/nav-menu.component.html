@@ -17,7 +17,7 @@
         <ul class="navbar-nav flex-grow mx-4">
           <!-- New In -->
           <li class="nav-item mx-4" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link text-muted" [routerLink]="['/']">NEW IN</a>
+            <a class="nav-link text-muted text-nowrap" [routerLink]="['/']">NEW IN</a>
           </li>
           <!-- Brands -->
           <li class="nav-item mx-4">
@@ -25,7 +25,7 @@
             <a class="nav-link" role="button" aria-expanded="false">
               BRANDS
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" [routerLink]="['/home/brand-saya']">Saya</a></li>
               <li><a class="dropdown-item" href="#">Limelight</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -44,7 +44,7 @@
             <a class="nav-link" role="button" aria-expanded="false">
               SUMMER
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" href="#">Lawn</a></li>
               <li><a class="dropdown-item" href="#">Organza</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -58,7 +58,7 @@
             <a class="nav-link" role="button" aria-expanded="false">
               WINTERS
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" href="#">Khaddar</a></li>
               <li><a class="dropdown-item" href="#">Cotton</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -72,7 +72,7 @@
             <a class="nav-link" role="button" aria-expanded="false">
               SHAWALS
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" href="#">Winter</a></li>
               <li><a class="dropdown-item" href="#">Summer</a></li>
             </ul>
@@ -83,7 +83,7 @@
             <a class="nav-link" role="button" aria-expanded="false">
               MAN
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" href="#">Winter</a></li>
               <li><a class="dropdown-item" href="#">Summer</a></li>
             </ul>
@@ -94,7 +94,7 @@
             <a class="nav-link text-danger" role="button" aria-expanded="false">
               SALE
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu rounded-0">
               <li><a class="dropdown-item" href="#">Flat 10% OFF</a></li>
               <li><a class="dropdown-item" href="#">Flat 12% OFF</a></li>
               <li><a class="dropdown-item" href="#">Flat 15% OFF</a></li>
@@ -103,7 +103,7 @@
           </li>
         </ul>
       </div>
-      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+      <div class="navbar-collapse collapse d-lg-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav mx-4">
           <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
             <a class="nav-link text-muted" [routerLink]="['/counter']"><img src="assets/icons/search_icon.svg" alt=""></a>
