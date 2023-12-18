@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./brand-saya.component.css']
 })
 export class BrandSayaComponent {
-
+  arr: number[] = [1,2,1,11,1,1,1,1,1,1,1,];
 }

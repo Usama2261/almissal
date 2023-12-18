@@ -13,4 +13,12 @@
             <p>3 Pieces</p>
         </div>
     </div>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+        <div class="col text-center" *ngFor="let block of arr">
+            <app-new-in-block></app-new-in-block>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn btn-dark mx-auto" style="width: 300px; height: 50px;">Show More</button>
+    </div>
 </div>

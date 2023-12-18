@@ -8,6 +8,7 @@ import { FeaturedBrandsComponent } from './featured-brands/featured-brands.compo
 import { NewInComponent } from './new-in/new-in.component';
 import { ClientServicesComponent } from './client-services/client-services.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     LandingPageRoutingModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    SharedModule
   ]
 })
 export class LandingPageModule { }
