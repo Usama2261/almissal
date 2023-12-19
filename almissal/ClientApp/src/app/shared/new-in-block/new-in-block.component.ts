@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-new-in-block',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-in-block.component.css']
 })
 export class NewInBlockComponent {
-
+  @Input() imagePath: string = '';
+  @Input() price: string = 'PKR. 2,500';
+  @Input() title: string = 'Jacquard-Embroidered Slub';
+  @Input() content1: string = 'Viscose-Blue-3PC';
+  @Input() content2: string = 'JACQUARD';
 }
