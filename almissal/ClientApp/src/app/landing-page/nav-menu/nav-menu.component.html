@@ -2,7 +2,7 @@
   <div class="row bg-dark">
     <p class="text-center text-white text-nowrap my-2">"Al-Misaal Collection" The fastest growing fashion platform in Pakistan</p>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow">
+  <nav class="navbar navbar-expand-xl navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow">
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand mx-4" [routerLink]="['/']">
@@ -101,9 +101,26 @@
               <li><a class="dropdown-item" href="#">Flat 20% OFF</a></li>
             </ul>
           </li>
+
+          <!-- ICONS -->
+          <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-muted" [routerLink]="['/counter']">
+              <img src="assets/icons/search_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-muted" [routerLink]="['/counter']">
+              <img src="assets/icons/track_order_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-muted" [routerLink]="['/counter']">
+              <img src="assets/icons/cart_icon.svg" alt="">
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="navbar-collapse collapse d-lg-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+      <!-- <div class="navbar-collapse collapse d-lg-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav mx-4">
           <li class="nav-item mx-2" [routerLinkActive]="['link-active']">
             <a class="nav-link text-muted" [routerLink]="['/counter']"><img src="assets/icons/search_icon.svg" alt=""></a>
@@ -115,7 +132,7 @@
             <a class="nav-link text-muted" [routerLink]="['/counter']"><img src="assets/icons/cart_icon.svg" alt=""></a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
 </header>
