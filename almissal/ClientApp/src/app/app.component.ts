@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { APIConstant } from './core/helpers/apiConstant';
+import { APIUrls } from './core/helpers/apiUrls';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +21,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  readonly APIConstant = APIConstant;
+  readonly APIUrls = APIUrls
 }

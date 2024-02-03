@@ -1,44 +1,132 @@
-.image-block{
-    position: relative;
+.image-block {
+  position: relative;
 }
 
 .text {
-    position: absolute;
-    color: white; /* Text color */
-    font-weight: bolder;
+  position: absolute;
+  color: white; /* Text color */
+  font-weight: bolder;
 }
 
 .image {
-    width: 100%; /* Make the image fill the available width */
-    display: block;
+  width: 100%; /* Make the image fill the available width */
+  display: block;
 }
 
-.text#winterCollection{
-    top: 85%; 
-    left: 25%;
+.text#winterCollection {
+  top: 85%;
+  left: 25%;
+  font-size: 50px;
+}
+
+.text#summerCollection {
+  top: 81%;
+  left: 15%;
+  font-size: 30px;
+}
+
+.text#cambricCollection {
+  top: 81%;
+  left: 15%;
+  font-size: 30px;
+}
+
+.text#embroideredCollection {
+  top: 74%;
+  left: 6%;
+  font-size: 30px;
+}
+
+.text#manCollection {
+  top: 77%;
+  left: 27%;
+  font-size: 30px;
+}
+
+@media (min-width: 576px) {
+  .text#winterCollection {
     font-size: 50px;
+  }
+
+  .text#summerCollection {
+    font-size: 31px;
+  }
+
+  .text#cambricCollection {
+    font-size: 31px;
+  }
+
+  .text#embroideredCollection {
+    font-size: 29px;
+  }
+
+  .text#manCollection {
+    font-size: 31px;
+  }
 }
 
-.text#summerCollection{
-    top: 81%; 
-    left: 15%;
-    font-size: 30px;
+@media (min-width: 768px) {
+  .text#winterCollection {
+    font-size: 31px;
+  }
+
+  .text#summerCollection {
+    font-size: 18px;
+  }
+
+  .text#cambricCollection {
+    font-size: 18px;
+  }
+
+  .text#embroideredCollection {
+    font-size: 17px;
+  }
+
+  .text#manCollection {
+    font-size: 18px;
+  }
 }
 
-.text#cambricCollection{
-    top: 81%; 
-    left: 15%;
-    font-size: 30px;
+@media (min-width: 992px) {
+  .text#winterCollection {
+    font-size: 40px;
+  }
+
+  .text#summerCollection {
+    font-size: 22px;
+  }
+
+  .text#cambricCollection {
+    font-size: 22px;
+  }
+
+  .text#embroideredCollection {
+    font-size: 20px;
+  }
+
+  .text#manCollection {
+    font-size: 22px;
+  }
 }
 
-.text#embroideredCollection{
-    top: 74%; 
-    left: 6%;
-    font-size: 30px;
-}
+@media (min-width: 1200px) {
+  .text#winterCollection {
+    font-size: 50px;
+  }
 
-.text#manCollection{
-    top: 77%; 
-    left: 27%;
-    font-size: 30px;
+  .text#summerCollection {
+    font-size: 25px;
+  }
+
+  .text#cambricCollection {
+    font-size: 25px;
+  }
+
+  .text#embroideredCollection {
+    font-size: 24px;
+  }
+
+  .text#manCollection {
+    font-size: 25px;
+  }
 }

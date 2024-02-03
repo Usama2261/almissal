@@ -1,7 +1,8 @@
 <footer>
   <div class="bg-dark text-white">
-    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-xs-1 py-5 px-5 my-5">
-      <div class="col mb-3 p-2">
+    <div class="row mx-4">
+      <!-- Logo & Description -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 p-2">
         <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
           <img src="assets/almisaal_logo2.svg" alt="logo" height="150" width="250">
         </a>
@@ -10,7 +11,8 @@
         </p>
       </div>
 
-      <div class="col mb-3">
+      <!-- Information -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 mt-4">
         <h5><strong>Information</strong></h5>
         <br>
         <ul class="nav flex-column">
@@ -21,7 +23,8 @@
         </ul>
       </div>
 
-      <div class="col mb-3">
+      <!-- Category -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 mt-4">
         <h5><strong>Category</strong></h5>
         <br>
         <ul class="nav flex-column">
@@ -34,29 +37,30 @@
         </ul>
       </div>
 
-      <div class="col mb-3">
+      <!-- Contact Us -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 mt-4">
         <h5><strong>Contact Us</strong></h5>
         <br>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-white">
-              <img src="assets/icons/phone_icon.svg" alt="phone">&nbsp;+923347932023</a>
+              <img src="assets/icons/phone_icon.svg" alt="phone">&nbsp;{{APIConstant.MOBILE_NO}}</a>
           </li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">
-              <img src="assets/icons/gmail_icon.svg" alt="gmail">&nbsp;Almissal@gmail.com</a>
+              <img src="assets/icons/gmail_icon.svg" alt="gmail">&nbsp;{{APIConstant.EMAIL}}</a>
           </li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">
               <img src="assets/icons/location_icon.svg" alt="location" height="30">&nbsp;Lahore, Pakistan</a>
           </li>
           <li class="nav-item mt-4">
             <div class="d-flex">
-              <a href="https://www.facebook.com/almisaal/" target="_blank">
+              <a href="{{APIConstant.FACEBOOK_URL}}" target="_blank">
                 <div class="rounded-shade mx-2"><img src="assets/icons/facebook_icon.svg" alt=""></div>
               </a>
-              <a href="https://www.facebook.com/almisaal/" target="_blank">
+              <a href="{{APIConstant.INSTAGRAM_URL}}" target="_blank">
                 <div class="rounded-shade mx-2"><img src="assets/icons/instagram_icon.svg" alt=""></div>
               </a>
-              <a href="https://www.facebook.com/almisaal/" target="_blank">
+              <a href="{{APIConstant.YOUUBE_URL}}" target="_blank">
                 <div class="rounded-shade mx-2"><img src="assets/icons/youtube_icon.svg" alt=""></div>
               </a>
             </div>
@@ -69,5 +73,4 @@
       <p class="text-center">Copyrights © 2023 ALMISAAL BRANDED COLLECTION. All rights reserved</p>
     </div>
   </div>
-
 </footer>
