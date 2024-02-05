@@ -12,9 +12,11 @@ import { NavMenuComponent } from './landing-page/nav-menu/nav-menu.component';
 import { SharedModule } from './shared/shared.module';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { ClientServicesComponent } from './landing-page/client-services/client-services.component';
+import { BaseComponent } from './base/base/base.component';
 
 @NgModule({
   declarations: [
+    //BaseComponent,
     AppComponent,
     HomeComponent,
     BrandSayaComponent,

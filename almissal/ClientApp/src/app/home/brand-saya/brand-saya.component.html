@@ -1,21 +1,10 @@
 <div class="container my-4">
-    <div class="d-flex justify-content-center">
-        <div class="text-center mx-4">
-            <img class="rounded-circle" src="assets/pictures/circle_img.png" alt="circle img" width="100">
-            <p>1 Pieces</p>
-        </div>
-        <div class="text-center mx-4">
-            <img class="rounded-circle" src="assets/pictures/circle_img.png" alt="circle img" width="100">
-            <p>2 Pieces</p>
-        </div>
-        <div class="text-center mx-4">
-            <img class="rounded-circle" src="assets/pictures/circle_img.png" alt="circle img" width="100">
-            <p>3 Pieces</p>
-        </div>
-    </div>
+    <app-brand-category></app-brand-category>
     <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
         <div class="col text-center" *ngFor="let block of arr">
-            <app-new-in-block></app-new-in-block>
+            <app-new-in-block
+             [imagePath]="'assets/pictures/new_in_1.png'"
+            ></app-new-in-block>
         </div>
     </div>
     <div class="row">

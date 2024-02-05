@@ -23,5 +23,5 @@ export class AppComponent {
   title = 'app';
 
   readonly APIConstant = APIConstant;
-  readonly APIUrls = APIUrls
+  readonly APIUrls = APIUrls;
 }
