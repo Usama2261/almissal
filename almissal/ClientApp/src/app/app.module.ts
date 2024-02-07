@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
 import { AdminComponent } from './admin/admin.component';
 import { WebComponent } from './web/web.component';
 import { WebModule } from './web/web.module';
@@ -20,7 +19,6 @@ import { WebModule } from './web/web.module';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    SharedModule,
     WebModule
     // NgbCarouselModule
   ],

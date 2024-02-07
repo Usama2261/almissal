@@ -6,6 +6,8 @@ import { NavMenuComponent } from './landing-page/nav-menu/nav-menu.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { ClientServicesComponent } from './landing-page/client-services/client-services.component';
+import { HomeModule } from './home/home.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ClientServicesComponent } from './landing-page/client-services/client-s
   imports: [
     CommonModule,
     WebRoutingModule,
-    LandingPageModule
+    LandingPageModule,
+    HomeModule,
+    SharedModule
   ]
 })
 export class WebModule { }
