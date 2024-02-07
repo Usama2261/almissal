@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { SharedModule } from '../shared/shared.module';
 import { BrandLimelightComponent } from './brands/brand-limelight/brand-limelight.component';
 import { BrandSanaSafinazComponent } from './brands/brand-sana-safinaz/brand-sana-safinaz.component';
 import { BrandBreezeComponent } from './brands/brand-breeze/brand-breeze.component';
@@ -18,6 +17,7 @@ import { WinterCottonComponent } from './winter/winter-cotton/winter-cotton.comp
 import { WinterJacquardComponent } from './winter/winter-jacquard/winter-jacquard.component';
 import { WinterVelvetComponent } from './winter/winter-velvet/winter-velvet.component';
 import { BrandSayaComponent } from './brands/brand-saya/brand-saya.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({

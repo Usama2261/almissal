@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent, pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+  // { path: '', component: LandingPageComponent, pathMatch: 'full' },
+   { path: '', loadChildren: () => import('./web/web.module').then(m => m.WebModule) },
+   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 ]
 
 @NgModule({

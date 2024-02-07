@@ -22,6 +22,5 @@ import { APIUrls } from './core/helpers/apiUrls';
 export class AppComponent {
   title = 'app';
 
-  readonly APIConstant = APIConstant;
-  readonly APIUrls = APIUrls;
+  
 }
