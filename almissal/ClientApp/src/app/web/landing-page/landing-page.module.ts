@@ -15,8 +15,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     LandingPageComponent,
     ImageCrouselComponent,
     FeaturedBrandsComponent,
-    NewInComponent,
-    
+    NewInComponent
   ],
   imports: [
     CommonModule,
