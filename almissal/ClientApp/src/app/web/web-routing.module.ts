@@ -3,11 +3,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { WebComponent } from './web.component';
 
 const routes: Routes = [
-  { path: '', component: WebComponent,
-  children: [
-    { path: '', loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule) },
-  ]
-}
+  {
+    path: '',
+    component: WebComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./landing-page/landing-page.module').then(
+            (m) => m.LandingPageModule
+          ),
+      },
+      {
+        path: 'home',
+        loadChildren: () =>
+          import('./home/home.module').then(
+            (m) => m.HomeModule
+          ),
+      },
+    ],
+  },
 ];
 
 @NgModule({

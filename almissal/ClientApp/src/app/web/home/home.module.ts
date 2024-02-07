@@ -19,10 +19,12 @@ import { WinterVelvetComponent } from './winter/winter-velvet/winter-velvet.comp
 import { BrandSayaComponent } from './brands/brand-saya/brand-saya.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { BreadcrumbComponent } from 'src/app/shared/breadcrumb/breadcrumb.component';
+import { HomeComponent } from './home.component';
 
 
 @NgModule({
   declarations: [
+    HomeComponent,
     BrandSayaComponent,
     BrandLimelightComponent,
     BrandSanaSafinazComponent,

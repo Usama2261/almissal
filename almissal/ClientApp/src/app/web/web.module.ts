@@ -2,31 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { WebRoutingModule } from './web-routing.module';
-import { NavMenuComponent } from './landing-page/nav-menu/nav-menu.component';
-import { FooterComponent } from './landing-page/footer/footer.component';
-import { LandingPageModule } from './landing-page/landing-page.module';
-import { ClientServicesComponent } from './landing-page/client-services/client-services.component';
-import { HomeModule } from './home/home.module';
-import { SharedModule } from '../shared/shared.module';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { ClientServicesComponent } from './client-services/client-services.component';
+import { WebComponent } from './web.component';
 
 
 @NgModule({
-  declarations: [
-    NavMenuComponent,
-    FooterComponent,
-    ClientServicesComponent,
-  ],
-  exports: [
-    NavMenuComponent,
-    FooterComponent,
-    ClientServicesComponent,
-  ],
+  declarations: [WebComponent, NavMenuComponent, FooterComponent, ClientServicesComponent],
+ // exports: [NavMenuComponent, FooterComponent, ClientServicesComponent],
   imports: [
     CommonModule,
     WebRoutingModule,
-    LandingPageModule,
-    HomeModule,
-    SharedModule
-  ]
+    //SharedModule,
+
+  ],
 })
-export class WebModule { }
+export class WebModule {}
