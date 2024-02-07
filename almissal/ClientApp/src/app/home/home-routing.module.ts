@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { BrandSayaComponent } from './brand-saya/brand-saya.component';
+import { BrandSayaComponent } from './brands/brand-saya/brand-saya.component';
 
 const routes: Routes = [
   {
