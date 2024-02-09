@@ -1,1 +1,18 @@
-<app-sidebar></app-sidebar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-auto col-md-3 col-xl-2 px-0" [ngClass]="isActive ? 'active' : ''">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col px-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark py-2">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-dark" (click)="isActive = !isActive">
+            <!-- <i class="fas fa-align-left"></i> -->
+            <i *ngIf="!isActive" class="bi bi-arrow-left-square-fill"></i>
+            <i *ngIf="isActive" class="bi bi-arrow-right-square-fill"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
