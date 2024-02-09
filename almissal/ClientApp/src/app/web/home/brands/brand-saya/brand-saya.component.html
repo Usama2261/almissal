@@ -3,7 +3,8 @@
     <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
         <div class="col text-center" *ngFor="let block of arr">
             <app-new-in-block
-             [imagePath]="'assets/pictures/new_in_1.png'"
+                [imagePath]="'assets/pictures/new_in_1.png'"
+                (onDetail)="goToDetail($event)"
             ></app-new-in-block>
         </div>
     </div>

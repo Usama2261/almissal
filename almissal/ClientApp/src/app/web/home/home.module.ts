@@ -20,6 +20,7 @@ import { BrandSayaComponent } from './brands/brand-saya/brand-saya.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { BreadcrumbComponent } from 'src/app/shared/breadcrumb/breadcrumb.component';
 import { HomeComponent } from './home.component';
+import { BrandSayaDetailComponent } from './brands/brand-saya/brand-saya-detail/brand-saya-detail.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { HomeComponent } from './home.component';
     WinterKhaddarComponent,
     WinterCottonComponent,
     WinterJacquardComponent,
-    WinterVelvetComponent
+    WinterVelvetComponent,
+    BrandSayaDetailComponent
   ],
   imports: [
     CommonModule,

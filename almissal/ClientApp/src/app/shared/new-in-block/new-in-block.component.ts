@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-new-in-block',
@@ -11,4 +11,10 @@ export class NewInBlockComponent {
   @Input() title: string = 'Jacquard-Embroidered Slub';
   @Input() content1: string = 'Viscose-Blue-3PC';
   @Input() content2: string = 'JACQUARD';
+
+  @Output() onDetail = new EventEmitter<any>();
+
+  onDescriptionClick(){
+    this.onDetail.emit(1);
+  }
 }

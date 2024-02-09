@@ -8,6 +8,7 @@ import { BrandBeachtreeComponent } from './brands/brand-beachtree/brand-beachtre
 import { BrandBreezeComponent } from './brands/brand-breeze/brand-breeze.component';
 import { BrandSanaSafinazComponent } from './brands/brand-sana-safinaz/brand-sana-safinaz.component';
 import { BrandLimelightComponent } from './brands/brand-limelight/brand-limelight.component';
+import { BrandSayaDetailComponent } from './brands/brand-saya/brand-saya-detail/brand-saya-detail.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       { path: 'brand-saya', component: BrandSayaComponent },
+      { path: 'brand-saya/:id', component: BrandSayaDetailComponent },
       { path: 'brand-limelight', component: BrandLimelightComponent },
       { path: 'brand-sana-safinaz', component: BrandSanaSafinazComponent },
       { path: 'brand-breeze', component: BrandBreezeComponent },
