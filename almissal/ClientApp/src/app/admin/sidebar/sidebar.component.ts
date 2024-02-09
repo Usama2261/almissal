@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  isActive:boolean = true;
+  isActive: boolean = false;
 
   toggleSidebar(){
     this.isActive = !this.isActive;
